@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarouselEffect/CatProfileViewController.swift"
+            timestampString = "590466221.375509"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CatProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.catProfile.getter : Swift.Array&lt;CarouselEffect.CatProfile&gt;"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.194985"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.catProfile.setter : Swift.Array&lt;CarouselEffect.CatProfile&gt;"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.1998169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.catProfile.modify : Swift.Array&lt;CarouselEffect.CatProfile&gt;"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.203235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.catProfile.modify : Swift.Array&lt;CarouselEffect.CatProfile&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.205881"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CarouselEffect.CatProfileViewController"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.20862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "302">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarouselEffect.CatProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarouselEffect.CatProfileViewController&gt;"
+                  moduleName = "CarouselEffect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mirzayantie/Library/Mobile%20Documents/com~apple~CloudDocs/Exercises/CarouselEffect/CarouselEffect/CatProfileViewController.swift"
+                  timestampString = "590379044.210876"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarouselEffect/CatProfileViewController.swift"
+            timestampString = "590466221.3756011"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
