@@ -16,15 +16,33 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     
+    var handle: AuthStateDidChangeListenerHandle?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //hide nav
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //show nav
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
     
 
     @IBAction func logInPressed(_ sender: AnyObject) {
@@ -36,7 +54,11 @@ class LoginViewController: UIViewController {
         //Log in the user
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if error != nil {
-                print(error!)
+                //print(error!)
+                let alertController = UIAlertController(title: "Error!", message: "Error \(error!.localizedDescription)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                
+                self.present(alertController, animated: true, completion: nil)
             } else {
                 print ("Login is successful!")
                 self.performSegue(withIdentifier: "goToCatProfile", sender: self)

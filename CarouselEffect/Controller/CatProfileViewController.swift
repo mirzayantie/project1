@@ -13,7 +13,7 @@ class CatProfileViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var searchController: UISearchController!
-    
+
 
     var catProfile = CatProfile.createCatProfile()
     let cellScale : CGFloat = 0.6
@@ -82,11 +82,11 @@ class CatProfileViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
+        
         do {
             try Auth.auth().signOut()
-            
-            navigationController?.popToRootViewController(animated: true)
-            
+            performSegue(withIdentifier: "logout", sender: self)
+            //navigationController?.popToRootViewController(animated: true)
         }
         catch {
             print("error: there was a problem logging out")

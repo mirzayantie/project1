@@ -120,9 +120,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTextfield.isEnabled = false
         sendButton.isEnabled = false
         
-        let messagesDB = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/").child("Messages")
-//        let values = ["email": email]
-//        ref.updateChildValues(values, withCompletionBlock: { (error, ref) in
+//        let messagesDB = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/").child("Messages")
+//        let values = ["email": messageTextfield.text, "message": ]
+//        messagesDB.updateChildValues(values, withCompletionBlock: { (error, ref) in
 //            if error != nil {
 //                print(error!)
 //                return
@@ -130,8 +130,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 //            print("Saved user successfully into Firebase database")
 //        })
 //        print ("Register is successful!")
-        
-        //let messagesDB = Database.database().reference().child("Messages")
+//
+        let messagesDB = Database.database().reference().child("Messages")
         
         let messageDictionary = ["Sender": Auth.auth().currentUser?.email,
                                  "MessageBody": messageTextfield.text!]

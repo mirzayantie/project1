@@ -12,5 +12,7 @@ class Message {
     
     //TODO: Messages need a messageBody and a sender variable
     var sender : String = ""
+    var titleOfMessage : String = ""
     var messageBody : String = ""
+    var date : String = ""
 }

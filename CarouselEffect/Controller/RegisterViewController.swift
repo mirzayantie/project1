@@ -13,6 +13,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
+    @IBOutlet var regButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +32,22 @@ class RegisterViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                let alertController = UIAlertController(title: "Error!", message: "Error \(error!.localizedDescription)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
             } else {
                 
-                let ref = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/")
-                let values = ["email": email]
-                ref.updateChildValues(values, withCompletionBlock: { (error, ref) in
-                    if error != nil {
-                        print(error!)
-                        return
-                    }
-                    print("Saved user successfully into Firebase database")
-                })
+//                let ref = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/")
+//                let values = ["email": email]
+//                ref.updateChildValues(values, withCompletionBlock: { (error, ref) in
+//                    if error != nil {
+//                        print(error!)
+//                        return
+//                    }
+//                    print("Saved user successfully into Firebase database")
+//                })
                 print ("Register is successful!")
                 self.performSegue(withIdentifier: "regGoToCatProfile", sender: self)
             }
