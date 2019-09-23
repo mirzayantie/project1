@@ -22,18 +22,25 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYl-q3-jhr" userLabel="Message Background">
                         <rect key="frame" x="60" y="0.0" width="260" height="59.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZA-a1-hfg" userLabel="Message Body">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZA-a1-hfg" userLabel="Message Body">
                                 <rect key="frame" x="8" y="28" width="244" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-Xn-fLG" userLabel="Sender Username">
-                                <rect key="frame" x="8" y="5" width="33" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-Xn-fLG" userLabel="Sender Username">
+                                <rect key="frame" x="8" y="5" width="80" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="13" id="W3W-N5-E8B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82T-RB-Rlq">
+                                <rect key="frame" x="210" y="0.0" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -66,6 +73,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="yB9-rx-wzK" id="Lk0-Q7-vLd"/>
+                <outlet property="date" destination="82T-RB-Rlq" id="4SC-qo-FCJ"/>
+                <outlet property="messageBackground" destination="YYl-q3-jhr" id="6kO-rA-95q"/>
+                <outlet property="messageBody" destination="iZA-a1-hfg" id="avs-W7-L6W"/>
+                <outlet property="senderUsername" destination="ZiZ-Xn-fLG" id="4jP-Vh-4W6"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="107.14285714285714"/>
         </tableViewCell>
     </objects>

@@ -10,20 +10,28 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet var emailTextfield: UITextField!
+    
+    @IBOutlet weak var userProfileImage: UIImageView!
+    @IBOutlet weak var nameTextfield: UITextField!
+    
     @IBOutlet var passwordTextfield: UITextField!
     @IBOutlet var regButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        //save some dummy value for test
+        //let ref = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/")
+        
+        // ref.updateChildValues(["someValues":1234])
+        
     }
     
     @IBAction func registerButtonPressed(_ sender: AnyObject) {
         
-        guard let email = emailTextfield.text, let password = passwordTextfield.text else {
+        guard let email = emailTextfield.text, let password = passwordTextfield.text, let name = nameTextfield.text else {
             print ("Form is not valid")
             return
         }
@@ -38,20 +46,23 @@ class RegisterViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
                 
             } else {
+                // authenticate the user
+                let ref = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/")
+                let userReference = ref.child("users").childByAutoId()
+                let values = ["name": name, "email": email, "password": password]
                 
-//                let ref = Database.database().reference(fromURL: "https://flash-chat-e266a.firebaseio.com/")
-//                let values = ["email": email]
-//                ref.updateChildValues(values, withCompletionBlock: { (error, ref) in
-//                    if error != nil {
-//                        print(error!)
-//                        return
-//                    }
-//                    print("Saved user successfully into Firebase database")
-//                })
+                userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    print("Saved user successfully into Firebase database")
+                })
+                
                 print ("Register is successful!")
                 self.performSegue(withIdentifier: "regGoToCatProfile", sender: self)
             }
         }
-
-}
+        
+    }
 }
