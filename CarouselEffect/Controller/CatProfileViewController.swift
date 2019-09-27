@@ -10,12 +10,15 @@ import UIKit
 import Firebase
 
 class CatProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate {
+ 
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var searchController: UISearchController!
 
-
+    @IBOutlet weak var welcomeMessage: UILabel!
+    
     var catProfile = CatProfile.createCatProfile()
+    
     let cellScale : CGFloat = 0.6
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,16 +34,58 @@ class CatProfileViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        checkIfUserIsLoggedIn()
         setupNavBarButton()
     }
 
+    func checkIfUserIsLoggedIn() {
+        
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            let uid = Auth.auth().currentUser?.uid
+
+//            Database.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+            //print("in")
+           // Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                Database.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+                    //!!!!!it can output all data from firebase but cannot output data based on uid.!!!!!!!!!
+                    print(snapshot)
+                    //print("user found")
+//                    let value = snapshot.value as? NSDictionary
+//                    let name = value?["name"] as? String ?? ""
+//                    self.welcomeMessage.text = name
+                }, withCancel: nil)
+            
+                //if let dictionary = snapshot.value as? [String : AnyObject] {
+                    // ???????????????????not functioning yet
+                    //self.welcomeMessage.text = dictionary ["name"] as? String
+                //}
+            //}, withCancel: nil)
+
+
+           
+//            let ref = Database.database().reference().child("users")
+//            ref.observe(.childAdded) { (snapshot) in
+//
+//                let snapshotValue = snapshot.value as! Dictionary<String,String>
+//                let userName = snapshotValue["name"]!
+//                self.welcomeMessage.text = userName
+//                print(userName)
+
+            
+        } else {
+            // No user is signed in.
+            // ...
+        }
+    }
+    
     func setupNavBarButton() {
         let searchImage = UIImage(named: "search")?.withRenderingMode(.alwaysOriginal)
         let searchBarButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(handleSearch))
-        
+
         navigationItem.rightBarButtonItem = searchBarButtonItem
     }
-    
+
     @objc func handleSearch() {
         //
     }
@@ -93,5 +138,12 @@ class CatProfileViewController: UIViewController, UICollectionViewDelegate, UICo
         }
         
     }
+    
+    
+    @IBAction func showAllButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "ShowAllCats", sender: self)
+    }
 }
+
 

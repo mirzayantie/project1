@@ -10,9 +10,19 @@ import UIKit
 
 class ChatList {
     
-    var senderName: String = ""
-    var titleOfMessage : String = ""
-    var messageBody: String = ""
-    var date: String = ""
+    // Properties
+    var senderName = ""
+    var titleOfMessage = ""
+    var messageBody = ""
+    var date = ""
     var userProfileImage : UIImage!
+    
+    //Initialization
+    init(senderName: String, titleOfMessage: String, messageBody: String, date: String, userProfileImage: UIImage!) {
+        self.senderName = senderName
+        self.titleOfMessage = titleOfMessage
+        self.messageBody = messageBody
+        self.date = date
+        self.userProfileImage = userProfileImage
+    }
 }

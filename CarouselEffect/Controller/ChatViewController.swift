@@ -46,6 +46,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         messageTableView.separatorStyle = .none
         
+        
     }
     
     //MARK: - TableView Delegate Methods

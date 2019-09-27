@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9F03FFD9233331B0004C73F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F03FFD8233331B0004C73F7 /* GoogleService-Info.plist */; };
+		9F050116233AE428002C9FC5 /* PostForAdoptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */; };
+		9F05011A233BD323002C9FC5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F050119233BD323002C9FC5 /* RoundButton.swift */; };
 		9F9698DB23384A1F00A2A848 /* CustomAllChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698D923384A1F00A2A848 /* CustomAllChatCell.swift */; };
 		9F9698DC23384A1F00A2A848 /* CustomAllChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9698DA23384A1F00A2A848 /* CustomAllChatCell.xib */; };
 		9F9698E02338554A00A2A848 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698DF2338554A00A2A848 /* ChatList.swift */; };
 		9F9698E223386A3D00A2A848 /* AllChatTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698E123386A3D00A2A848 /* AllChatTableController.swift */; };
+		9F9698E42339A25E00A2A848 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698E32339A25E00A2A848 /* User.swift */; };
+		9F9698E62339DE5000A2A848 /* CatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698E52339DE5000A2A848 /* CatListController.swift */; };
+		9F9698E82339E99800A2A848 /* CatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698E72339E99800A2A848 /* CatViewCell.swift */; };
+		9F9698EA233A0FAE00A2A848 /* DetailCatInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9698E9233A0FAE00A2A848 /* DetailCatInfoController.swift */; };
 		9FBDA3702331D3EB00941D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */; };
 		9FBDA3742331F90E00941D85 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA3732331F90E00941D85 /* RegisterViewController.swift */; };
 		9FBDA37A2332721800941D85 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA3782332721800941D85 /* CustomMessageCell.swift */; };
@@ -33,10 +39,16 @@
 		4E08B1BFB8A0117A1A276348 /* Pods_CarouselEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarouselEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BA3948B525BBD63B09DF49 /* Pods-CarouselEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselEffect.release.xcconfig"; path = "Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect.release.xcconfig"; sourceTree = "<group>"; };
 		9F03FFD8233331B0004C73F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostForAdoptionController.swift; sourceTree = "<group>"; };
+		9F050119233BD323002C9FC5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		9F9698D923384A1F00A2A848 /* CustomAllChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAllChatCell.swift; sourceTree = "<group>"; };
 		9F9698DA23384A1F00A2A848 /* CustomAllChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAllChatCell.xib; sourceTree = "<group>"; };
 		9F9698DF2338554A00A2A848 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		9F9698E123386A3D00A2A848 /* AllChatTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChatTableController.swift; sourceTree = "<group>"; };
+		9F9698E32339A25E00A2A848 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9F9698E52339DE5000A2A848 /* CatListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListController.swift; sourceTree = "<group>"; };
+		9F9698E72339E99800A2A848 /* CatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewCell.swift; sourceTree = "<group>"; };
+		9F9698E9233A0FAE00A2A848 /* DetailCatInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCatInfoController.swift; sourceTree = "<group>"; };
 		9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FBDA3732331F90E00941D85 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9FBDA3782332721800941D85 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
@@ -82,6 +94,10 @@
 				9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */,
 				9FBDA3732331F90E00941D85 /* RegisterViewController.swift */,
 				9F9698E123386A3D00A2A848 /* AllChatTableController.swift */,
+				9F9698E52339DE5000A2A848 /* CatListController.swift */,
+				9F9698E9233A0FAE00A2A848 /* DetailCatInfoController.swift */,
+				9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */,
+				9F050119233BD323002C9FC5 /* RoundButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				9FC1CD7923304CDD0066D225 /* Main.storyboard */,
-				9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */,
 				9FBDA3752332711F00941D85 /* Custom cell */,
 			);
 			path = View;
@@ -102,6 +117,7 @@
 				9FC1CD89233059470066D225 /* CatProfile.swift */,
 				9FBDA37C2332764200941D85 /* Message.swift */,
 				9F9698DF2338554A00A2A848 /* ChatList.swift */,
+				9F9698E32339A25E00A2A848 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,10 +125,12 @@
 		9FBDA3752332711F00941D85 /* Custom cell */ = {
 			isa = PBXGroup;
 			children = (
+				9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */,
 				9FBDA3782332721800941D85 /* CustomMessageCell.swift */,
 				9FBDA3792332721800941D85 /* MessageCell.xib */,
 				9F9698D923384A1F00A2A848 /* CustomAllChatCell.swift */,
 				9F9698DA23384A1F00A2A848 /* CustomAllChatCell.xib */,
+				9F9698E72339E99800A2A848 /* CatViewCell.swift */,
 			);
 			path = "Custom cell";
 			sourceTree = "<group>";
@@ -277,17 +295,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F05011A233BD323002C9FC5 /* RoundButton.swift in Sources */,
+				9F9698E42339A25E00A2A848 /* User.swift in Sources */,
 				9F9698E223386A3D00A2A848 /* AllChatTableController.swift in Sources */,
 				9FBDA37A2332721800941D85 /* CustomMessageCell.swift in Sources */,
+				9F050116233AE428002C9FC5 /* PostForAdoptionController.swift in Sources */,
 				9F9698E02338554A00A2A848 /* ChatList.swift in Sources */,
 				9FC1CD8A233059470066D225 /* CatProfile.swift in Sources */,
+				9F9698EA233A0FAE00A2A848 /* DetailCatInfoController.swift in Sources */,
 				9F9698DB23384A1F00A2A848 /* CustomAllChatCell.swift in Sources */,
 				9FC1CD7823304CDD0066D225 /* CatProfileViewController.swift in Sources */,
 				9FC1CD882330555A0066D225 /* CatCollectionViewCell.swift in Sources */,
 				9FBDA3742331F90E00941D85 /* RegisterViewController.swift in Sources */,
 				9FBDA37D2332764200941D85 /* Message.swift in Sources */,
+				9F9698E62339DE5000A2A848 /* CatListController.swift in Sources */,
 				9FBDA3702331D3EB00941D85 /* LoginViewController.swift in Sources */,
 				9FBDA37F23327AA600941D85 /* ChatViewController.swift in Sources */,
+				9F9698E82339E99800A2A848 /* CatViewCell.swift in Sources */,
 				9FC1CD7623304CDD0066D225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2936439QH;
+				DEVELOPMENT_TEAM = 9UR5ABRL7P;
 				INFOPLIST_FILE = CarouselEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2936439QH;
+				DEVELOPMENT_TEAM = 9UR5ABRL7P;
 				INFOPLIST_FILE = CarouselEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

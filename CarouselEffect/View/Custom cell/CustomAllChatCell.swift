@@ -13,7 +13,7 @@ class CustomAllChatCell: UITableViewCell {
     @IBOutlet var senderName: UILabel!
     @IBOutlet var messageBody: UILabel!
     @IBOutlet var date: UILabel!
-    @IBOutlet var userProfileImage: UIImage!
+    @IBOutlet var userProfileImage: UIImageView!
     @IBOutlet var titleOfMessage: UILabel!
 
     override func awakeFromNib() {

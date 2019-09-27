@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var emailTextfield: UITextField!
     
@@ -18,6 +18,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet var passwordTextfield: UITextField!
     @IBOutlet var regButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,42 @@ class RegisterViewController: UIViewController {
         // ref.updateChildValues(["someValues":1234])
         
     }
+    
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        
+        // Hide the keyboard.
+        //nameTextField.resignFirstResponder()
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+        
+        // Only allow photos to be picked, not taken.
+        imagePickerController.sourceType = .photoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+        
+    }
+    
+    //MARK: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        // Dismiss the picker if the user canceled.
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        userProfileImage.image = selectedImage
+        
+        dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
     
     @IBAction func registerButtonPressed(_ sender: AnyObject) {
         
@@ -40,6 +77,7 @@ class RegisterViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                
                 let alertController = UIAlertController(title: "Error!", message: "Error \(error!.localizedDescription)", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
                 

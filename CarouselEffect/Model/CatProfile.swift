@@ -11,19 +11,29 @@ import UIKit
 class CatProfile
 {
     // MARK: - Public API
-    var title = ""
-    var description = ""
-    //var numberOfMembers = 0
-    //var numberOfPosts = 0
-    var featuredImage: UIImage!
+    //var title = ""
+    var catID = ""
+    var catImage : UIImage?
+    var catName = ""
+    var catDescription = ""
+    var catBreed = ""
+    var catAge = ""
+    var catGender = ""
+    var catColour = ""
     
-    init(title: String, description: String, featuredImage: UIImage!)
+    init(catID: String, catName: String, catImage: UIImage?, catBreed:String, catAge:String, catGender: String, catDescription: String, catColour: String)
     {
-        self.title = title
-        self.description = description
-        self.featuredImage = featuredImage
-       // numberOfMembers = 1
-       // numberOfPosts = 1
+        //self.title = title
+        //self.description = description
+        self.catID = catID
+        self.catImage = catImage
+        self.catName = catName
+        self.catAge = catAge
+        self.catBreed = catBreed
+        self.catGender = catGender
+        self.catColour = catColour
+        self.catDescription = catDescription
+    
     }
     
     // MARK: - Private
@@ -31,10 +41,13 @@ class CatProfile
     static func createCatProfile() -> [CatProfile]
     {
         return [
-            CatProfile(title: "Miu Female", description: "Female, 3 months, Kuala Lumpur, Long Hair. 🐧⛺️✨", featuredImage: UIImage(named: "kitten")!),
-            CatProfile(title: "Jack Male", description: "Male, 1 year, Kuala Lumpur, Persian. 🐧⛺️✨", featuredImage: UIImage(named: "cat2")!),
-            CatProfile(title: "Tompok Female ", description: "Female, 9 months, Kuala Lumpur, Mix. 🐧⛺️✨", featuredImage: UIImage(named: "cat3")!),
-            CatProfile(title: "Puteh Female", description: "Female, 3 years, Kuala Lumpur, Long Hair. 🐧⛺️✨", featuredImage: UIImage(named: "cat4")!),
+            CatProfile(catID: "1", catName: "Miu", catImage: UIImage(named: "kitten")!, catBreed: "Long hair", catAge: "3 months", catGender: "Female", catDescription: "Miu is playful and fun. She lets me shower her weekly and loves being combed. She has never shown me her claws ever - a very gentle girl who enjoys belly rubs and forehead kisses.", catColour: "white"),
+            
+            CatProfile(catID: "2", catName: "Jack", catImage: UIImage(named: "cat2")!, catBreed: "Persian", catAge: "1 year", catGender: "Male", catDescription: "Jack is a very active and curious cat. He has been vaccinated and enjoys his trip to the vet. Clumsy at times, but very adorable. Although he looks like a warrior, he's afraid of the dark and will meow loudly when left on his own. ", catColour: "black"),
+            
+            CatProfile(catID: "3", catName: "Tompok", catImage: UIImage(named: "cat3")!, catBreed: "Mix", catAge: "9 months", catGender: "Female", catDescription: "Tompok is playful and fun. She lets me shower her weekly and loves being combed. She has never shown me her claws ever - a very gentle girl who enjoys belly rubs and forehead kisses.", catColour: "orange"),
+            
+            CatProfile(catID: "4", catName: "Ginger", catImage: UIImage(named: "cat4")!, catBreed: "Long Hair", catAge: "3 years", catGender: "Female", catDescription: "Ginger were rescued when she was a little kitten. She was found wondering on the road by herself. She loves food, cuddles and frequent petting.", catColour: "orange"),
             
         ]
     }

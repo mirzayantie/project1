@@ -21,8 +21,8 @@ class CatCollectionViewCell: UICollectionViewCell {
     
     func updateUI() {
         if let catProfile = catProfile {
-            featuredImageView.image = catProfile.featuredImage
-            catTitleLabel.text = catProfile.title
+            featuredImageView.image = catProfile.catImage
+            catTitleLabel.text = catProfile.catName
             //backgroundColorView.backgroundColor = catProfile.color
         } else {
             featuredImageView.image = nil
