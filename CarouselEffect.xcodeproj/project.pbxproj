@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		9FBDA3702331D3EB00941D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */; };
 		9FBDA3742331F90E00941D85 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA3732331F90E00941D85 /* RegisterViewController.swift */; };
 		9FBDA37A2332721800941D85 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA3782332721800941D85 /* CustomMessageCell.swift */; };
-		9FBDA37B2332721800941D85 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBDA3792332721800941D85 /* MessageCell.xib */; };
 		9FBDA37D2332764200941D85 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA37C2332764200941D85 /* Message.swift */; };
 		9FBDA37F23327AA600941D85 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBDA37E23327AA600941D85 /* ChatViewController.swift */; };
 		9FC1CD7623304CDD0066D225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1CD7523304CDD0066D225 /* AppDelegate.swift */; };
@@ -31,13 +30,12 @@
 		9FC1CD8023304CDF0066D225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC1CD7E23304CDF0066D225 /* LaunchScreen.storyboard */; };
 		9FC1CD882330555A0066D225 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */; };
 		9FC1CD8A233059470066D225 /* CatProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1CD89233059470066D225 /* CatProfile.swift */; };
-		D272D3E624D7AF3A0951D36E /* Pods_CarouselEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08B1BFB8A0117A1A276348 /* Pods_CarouselEffect.framework */; };
+		D958DA771F702DBF9D443A62 /* Pods_CarouselEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4356F9692BA6925F0D73BA /* Pods_CarouselEffect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		025F0C0F4F4D16589A701D15 /* Pods-CarouselEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselEffect.debug.xcconfig"; path = "Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect.debug.xcconfig"; sourceTree = "<group>"; };
-		4E08B1BFB8A0117A1A276348 /* Pods_CarouselEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarouselEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97BA3948B525BBD63B09DF49 /* Pods-CarouselEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselEffect.release.xcconfig"; path = "Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect.release.xcconfig"; sourceTree = "<group>"; };
+		3E4356F9692BA6925F0D73BA /* Pods_CarouselEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarouselEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9488D9286AFA4A622F9A16CA /* Pods-CarouselEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselEffect.debug.xcconfig"; path = "Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect.debug.xcconfig"; sourceTree = "<group>"; };
 		9F03FFD8233331B0004C73F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostForAdoptionController.swift; sourceTree = "<group>"; };
 		9F050119233BD323002C9FC5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -52,7 +50,6 @@
 		9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FBDA3732331F90E00941D85 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9FBDA3782332721800941D85 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
-		9FBDA3792332721800941D85 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9FBDA37C2332764200941D85 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9FBDA37E23327AA600941D85 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9FC1CD7223304CDD0066D225 /* CarouselEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +61,7 @@
 		9FC1CD8123304CDF0066D225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FC1CD89233059470066D225 /* CatProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfile.swift; sourceTree = "<group>"; };
+		F3AD11A9859A7851FDF4DA46 /* Pods-CarouselEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselEffect.release.xcconfig"; path = "Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,33 +69,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D272D3E624D7AF3A0951D36E /* Pods_CarouselEffect.framework in Frameworks */,
+				D958DA771F702DBF9D443A62 /* Pods_CarouselEffect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		597D209FD7B83C404505330D /* Frameworks */ = {
+		2C33799F6E43AA28C6BFB821 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E08B1BFB8A0117A1A276348 /* Pods_CarouselEffect.framework */,
+				3E4356F9692BA6925F0D73BA /* Pods_CarouselEffect.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3543FD0E233F1235005E7D93 /* Messaging Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3543FD14233F5409005E7D93 /* IBDesignable */,
+				9FBDA37E23327AA600941D85 /* ChatViewController.swift */,
+				9F9698E123386A3D00A2A848 /* AllChatTableController.swift */,
+			);
+			path = "Messaging Controller";
+			sourceTree = "<group>";
+		};
+		3543FD0F233F125C005E7D93 /* LoginReg Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FBDA3732331F90E00941D85 /* RegisterViewController.swift */,
+				9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */,
+			);
+			path = "LoginReg Controller";
+			sourceTree = "<group>";
+		};
+		3543FD10233F1280005E7D93 /* Cat Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F9698E52339DE5000A2A848 /* CatListController.swift */,
+				9F9698E9233A0FAE00A2A848 /* DetailCatInfoController.swift */,
+				9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */,
+			);
+			path = "Cat Controller";
+			sourceTree = "<group>";
+		};
+		3543FD11233F12BF005E7D93 /* Home Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1CD7723304CDD0066D225 /* CatProfileViewController.swift */,
+			);
+			path = "Home Controller";
+			sourceTree = "<group>";
+		};
+		3543FD12233F1381005E7D93 /* Message Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9FBDA3782332721800941D85 /* CustomMessageCell.swift */,
+				9F9698D923384A1F00A2A848 /* CustomAllChatCell.swift */,
+			);
+			path = "Message Cell";
+			sourceTree = "<group>";
+		};
+		3543FD13233F139C005E7D93 /* Cat Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */,
+				9F9698DA23384A1F00A2A848 /* CustomAllChatCell.xib */,
+				9F9698E72339E99800A2A848 /* CatViewCell.swift */,
+			);
+			path = "Cat Cell";
+			sourceTree = "<group>";
+		};
+		3543FD14233F5409005E7D93 /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				9F050119233BD323002C9FC5 /* RoundButton.swift */,
+			);
+			path = IBDesignable;
 			sourceTree = "<group>";
 		};
 		9FBDA36C2331CDB700941D85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9FC1CD7723304CDD0066D225 /* CatProfileViewController.swift */,
-				9FBDA37E23327AA600941D85 /* ChatViewController.swift */,
-				9FBDA36F2331D3EB00941D85 /* LoginViewController.swift */,
-				9FBDA3732331F90E00941D85 /* RegisterViewController.swift */,
-				9F9698E123386A3D00A2A848 /* AllChatTableController.swift */,
-				9F9698E52339DE5000A2A848 /* CatListController.swift */,
-				9F9698E9233A0FAE00A2A848 /* DetailCatInfoController.swift */,
-				9F050115233AE428002C9FC5 /* PostForAdoptionController.swift */,
-				9F050119233BD323002C9FC5 /* RoundButton.swift */,
+				3543FD11233F12BF005E7D93 /* Home Controller */,
+				3543FD10233F1280005E7D93 /* Cat Controller */,
+				3543FD0F233F125C005E7D93 /* LoginReg Controller */,
+				3543FD0E233F1235005E7D93 /* Messaging Controller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,12 +182,8 @@
 		9FBDA3752332711F00941D85 /* Custom cell */ = {
 			isa = PBXGroup;
 			children = (
-				9FC1CD872330555A0066D225 /* CatCollectionViewCell.swift */,
-				9FBDA3782332721800941D85 /* CustomMessageCell.swift */,
-				9FBDA3792332721800941D85 /* MessageCell.xib */,
-				9F9698D923384A1F00A2A848 /* CustomAllChatCell.swift */,
-				9F9698DA23384A1F00A2A848 /* CustomAllChatCell.xib */,
-				9F9698E72339E99800A2A848 /* CatViewCell.swift */,
+				3543FD13233F139C005E7D93 /* Cat Cell */,
+				3543FD12233F1381005E7D93 /* Message Cell */,
 			);
 			path = "Custom cell";
 			sourceTree = "<group>";
@@ -141,7 +194,7 @@
 				9FC1CD7423304CDD0066D225 /* CarouselEffect */,
 				9FC1CD7323304CDD0066D225 /* Products */,
 				D0E5FA2F7C999CDC9AD1710A /* Pods */,
-				597D209FD7B83C404505330D /* Frameworks */,
+				2C33799F6E43AA28C6BFB821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +224,8 @@
 		D0E5FA2F7C999CDC9AD1710A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				025F0C0F4F4D16589A701D15 /* Pods-CarouselEffect.debug.xcconfig */,
-				97BA3948B525BBD63B09DF49 /* Pods-CarouselEffect.release.xcconfig */,
+				9488D9286AFA4A622F9A16CA /* Pods-CarouselEffect.debug.xcconfig */,
+				F3AD11A9859A7851FDF4DA46 /* Pods-CarouselEffect.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,11 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FC1CD8423304CDF0066D225 /* Build configuration list for PBXNativeTarget "CarouselEffect" */;
 			buildPhases = (
-				6885A24100FA8E5EE1E0AA10 /* [CP] Check Pods Manifest.lock */,
+				7148C330A451986EB31DB0DE /* [CP] Check Pods Manifest.lock */,
 				9FC1CD6E23304CDD0066D225 /* Sources */,
 				9FC1CD6F23304CDD0066D225 /* Frameworks */,
 				9FC1CD7023304CDD0066D225 /* Resources */,
-				840A6B2A8DAFA54B71A5011F /* [CP] Embed Pods Frameworks */,
+				F17CFC43556E59E6C523B4AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,7 +293,6 @@
 				9FC1CD8023304CDF0066D225 /* LaunchScreen.storyboard in Resources */,
 				9FC1CD7D23304CDF0066D225 /* Assets.xcassets in Resources */,
 				9F03FFD9233331B0004C73F7 /* GoogleService-Info.plist in Resources */,
-				9FBDA37B2332721800941D85 /* MessageCell.xib in Resources */,
 				9F9698DC23384A1F00A2A848 /* CustomAllChatCell.xib in Resources */,
 				9FC1CD7B23304CDD0066D225 /* Main.storyboard in Resources */,
 			);
@@ -249,7 +301,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6885A24100FA8E5EE1E0AA10 /* [CP] Check Pods Manifest.lock */ = {
+		7148C330A451986EB31DB0DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,17 +323,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		840A6B2A8DAFA54B71A5011F /* [CP] Embed Pods Frameworks */ = {
+		F17CFC43556E59E6C523B4AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarouselEffect/Pods-CarouselEffect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,12 +521,13 @@
 		};
 		9FC1CD8523304CDF0066D225 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025F0C0F4F4D16589A701D15 /* Pods-CarouselEffect.debug.xcconfig */;
+			baseConfigurationReference = 9488D9286AFA4A622F9A16CA /* Pods-CarouselEffect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UR5ABRL7P;
 				INFOPLIST_FILE = CarouselEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,12 +541,13 @@
 		};
 		9FC1CD8623304CDF0066D225 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97BA3948B525BBD63B09DF49 /* Pods-CarouselEffect.release.xcconfig */;
+			baseConfigurationReference = F3AD11A9859A7851FDF4DA46 /* Pods-CarouselEffect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UR5ABRL7P;
 				INFOPLIST_FILE = CarouselEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

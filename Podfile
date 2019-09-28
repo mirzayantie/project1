@@ -6,11 +6,10 @@ target 'CarouselEffect' do
   use_frameworks!
 
   # Pods for CarouselEffect
-
-pod 'Firebase/Database'
-pod 'Firebase/Auth'
-pod 'Firebase/Storage'
-pod 'SVProgressHUD'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'SVProgressHUD'
 
 end
 
